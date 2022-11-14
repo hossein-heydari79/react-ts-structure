@@ -10,7 +10,7 @@
   "proseWrap": "preserve",
   "semi": false,
   "singleQuote": true,
-  "tabWidth": 0,
+  "tabWidth": 5,
   "trailingComma": "es5",
   "useTabs": false
 }
