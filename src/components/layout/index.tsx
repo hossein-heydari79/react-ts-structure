@@ -6,14 +6,10 @@ function Layout() {
       className='d-flex'
       style={{
         width: '300px',
-        height: '3000px',
-        justifyContent: 'center',
-        alignItems: 'center',
+        height: '300px',
       }}
     >
-      <p className='p-static' style={{ top: '10px' }}>
-        hossein
-      </p>
+      <p className='m-10'>hossein</p>
     </div>
   )
 }

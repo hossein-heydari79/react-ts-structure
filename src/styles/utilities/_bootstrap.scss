@@ -2,120 +2,120 @@
 
 // margin and padding
 
-@each $space in $spaces {
-  @if $space== auto {
-    .m-#{$space} {
-      margin: $space !important;
+@each $key, $value in $spaces {
+  @if $key == auto {
+    .m-#{$key} {
+      margin: $value !important;
     }
 
-    .mr-#{$space} {
-      margin-right: $space !important;
+    .mr-#{$key} {
+      margin-right: $value !important;
     }
 
-    .ms-#{$space} {
-      margin-inline-start: $space !important;
+    .ms-#{$key} {
+      margin-inline-start: $value !important;
     }
 
-    .ml-#{$space} {
-      margin-left: $space !important;
+    .ml-#{$key} {
+      margin-left: $value !important;
     }
 
-    .me-#{$space} {
-      margin-inline-end: $space !important;
+    .me-#{$key} {
+      margin-inline-end: $value !important;
     }
 
-    .mt-#{$space} {
-      margin-top: $space !important;
+    .mt-#{$key} {
+      margin-top: $value !important;
     }
 
-    .mb-#{$space} {
-      margin-bottom: $space !important;
+    .mb-#{$key} {
+      margin-bottom: $value !important;
     }
 
-    .mx-#{$space} {
-      margin-inline-start: $space !important;
-      margin-inline-end: $space !important;
+    .mx-#{$key} {
+      margin-inline-start: $value !important;
+      margin-inline-end: $value !important;
     }
 
-    .my-#{$space} {
-      margin-top: $space !important;
-      margin-bottom: $space !important;
+    .my-#{$key} {
+      margin-top: $value !important;
+      margin-bottom: $value !important;
     }
   } @else {
-    .p-#{$space} {
-      padding: #{$space}rem !important;
+    .p-#{$key} {
+      padding: #{$value}rem !important;
     }
 
-    .pr-#{$space} {
-      padding-right: #{$space}rem !important;
+    .pr-#{$key} {
+      padding-right: #{$value}rem !important;
     }
 
-    .ps-#{$space} {
-      padding-inline-start: #{$space}rem !important;
+    .ps-#{$key} {
+      padding-inline-start: #{$value}rem !important;
     }
 
-    .pl-#{$space} {
-      padding-left: #{$space}rem !important;
+    .pl-#{$key} {
+      padding-left: #{$value}rem !important;
     }
 
-    .pe-#{$space} {
-      padding-inline-end: #{$space}rem !important;
+    .pe-#{$key} {
+      padding-inline-end: #{$value}rem !important;
     }
 
-    .pb-#{$space} {
-      padding-bottom: #{$space}rem !important;
+    .pb-#{$key} {
+      padding-bottom: #{$value}rem !important;
     }
 
-    .pt-#{$space} {
-      padding-top: #{$space}rem !important;
+    .pt-#{$key} {
+      padding-top: #{$value}rem !important;
     }
 
-    .px-#{$space} {
-      padding-inline-start: #{$space}rem !important;
-      padding-inline-end: #{$space}rem !important;
+    .px-#{$key} {
+      padding-inline-start: #{$value}rem !important;
+      padding-inline-end: #{$value}rem !important;
     }
 
-    .py-#{$space} {
-      padding-top: #{$space}rem !important;
-      padding-bottom: #{$space}rem !important;
+    .py-#{$key} {
+      padding-top: #{$value}rem !important;
+      padding-bottom: #{$value}rem !important;
     }
 
-    .m-#{$space} {
-      margin: #{$space}rem !important;
+    .m-#{$key} {
+      margin: #{$value}rem !important;
     }
 
-    .mr-#{$space} {
-      margin-right: #{$space}rem !important;
+    .mr-#{$key} {
+      margin-right: #{$value}rem !important;
     }
 
-    .ms-#{$space} {
-      margin-inline-start: #{$space}rem !important;
+    .ms-#{$key} {
+      margin-inline-start: #{$value}rem !important;
     }
 
-    .ml-#{$space} {
-      margin-left: #{$space}rem !important;
+    .ml-#{$key} {
+      margin-left: #{$value}rem !important;
     }
 
-    .me-#{$space} {
-      margin-inline-end: #{$space}rem !important;
+    .me-#{$key} {
+      margin-inline-end: #{$value}rem !important;
     }
 
-    .mb-#{$space} {
-      margin-bottom: #{$space}rem !important;
+    .mb-#{$key} {
+      margin-bottom: #{$value}rem !important;
     }
 
-    .mt-#{$space} {
-      margin-top: #{$space}rem !important;
+    .mt-#{$key} {
+      margin-top: #{$value}rem !important;
     }
 
-    .mx-#{$space} {
-      margin-inline-start: #{$space}rem !important;
-      margin-inline-end: #{$space}rem !important;
+    .mx-#{$key} {
+      margin-inline-start: #{$value}rem !important;
+      margin-inline-end: #{$value}rem !important;
     }
 
-    .my-#{$space} {
-      margin-top: #{$space}rem !important;
-      margin-bottom: #{$space}rem !important;
+    .my-#{$key} {
+      margin-top: #{$value}rem !important;
+      margin-bottom: #{$value}rem !important;
     }
   }
 }
@@ -133,5 +133,13 @@
 @each $position in $positions {
   .p-#{$position} {
     position: $position !important;
+  }
+}
+
+// gap
+
+@each $key, $value in $gaps {
+  .gap-#{$key} {
+    gap: #{$value}rem !important;
   }
 }
