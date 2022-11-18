@@ -175,3 +175,23 @@
     font-size: #{$value}rem !important;
   }
 }
+
+// width and height
+
+@each $size in $sizePercents {
+  .w-#{$size} {
+    width: $size * 1% !important;
+  }
+
+  .mw-#{$size} {
+    max-width: $size * 1% !important;
+  }
+
+  .h-#{$size} {
+    height: $size * 1% !important;
+  }
+
+  .mh-#{$size} {
+    max-height: $size * 1% !important;
+  }
+}
