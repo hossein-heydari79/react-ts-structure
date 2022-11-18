@@ -159,3 +159,11 @@
     flex-direction: $direction !important;
   }
 }
+
+// font-weight
+
+@each $fontWeight in $fontWeights {
+  .font-weight-#{$fontWeight} {
+    font-weight: $fontWeight !important;
+  }
+}

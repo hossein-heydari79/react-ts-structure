@@ -9,7 +9,7 @@ function Layout() {
         height: '300px',
       }}
     >
-      <p className='m-10'>hossein</p>
+      <p className='m-10 font-weight-400'>hossein</p>
     </div>
   )
 }
