@@ -119,3 +119,11 @@
     }
   }
 }
+
+// display
+
+@each $display in $displayProps {
+  .d-#{$display} {
+    display: $display !important;
+  }
+}
