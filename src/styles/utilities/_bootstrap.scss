@@ -146,8 +146,16 @@
 
 // flex-wrap
 
-@each $key in $flexWrapStates {
-  .flex-#{$key} {
-    flex-wrap: $key !important;
+@each $state in $flexWrapStates {
+  .flex-#{$state} {
+    flex-wrap: $state !important;
+  }
+}
+
+// flex-direction
+
+@each $direction in $flexDirectionStates {
+  .flex-#{$direction} {
+    flex-direction: $direction !important;
   }
 }
