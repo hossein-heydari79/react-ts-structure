@@ -1,0 +1,121 @@
+@import '../_vars.scss';
+
+// margin and padding
+
+@each $space in $spaces {
+  @if $space== auto {
+    .m-#{$space} {
+      margin: $space !important;
+    }
+
+    .mr-#{$space} {
+      margin-right: $space !important;
+    }
+
+    .ms-#{$space} {
+      margin-inline-start: $space !important;
+    }
+
+    .ml-#{$space} {
+      margin-left: $space !important;
+    }
+
+    .me-#{$space} {
+      margin-inline-end: $space !important;
+    }
+
+    .mt-#{$space} {
+      margin-top: $space !important;
+    }
+
+    .mb-#{$space} {
+      margin-bottom: $space !important;
+    }
+
+    .mx-#{$space} {
+      margin-inline-start: $space !important;
+      margin-inline-end: $space !important;
+    }
+
+    .my-#{$space} {
+      margin-top: $space !important;
+      margin-bottom: $space !important;
+    }
+  } @else {
+    .p-#{$space} {
+      padding: #{$space}rem !important;
+    }
+
+    .pr-#{$space} {
+      padding-right: #{$space}rem !important;
+    }
+
+    .ps-#{$space} {
+      padding-inline-start: #{$space}rem !important;
+    }
+
+    .pl-#{$space} {
+      padding-left: #{$space}rem !important;
+    }
+
+    .pe-#{$space} {
+      padding-inline-end: #{$space}rem !important;
+    }
+
+    .pb-#{$space} {
+      padding-bottom: #{$space}rem !important;
+    }
+
+    .pt-#{$space} {
+      padding-top: #{$space}rem !important;
+    }
+
+    .px-#{$space} {
+      padding-inline-start: #{$space}rem !important;
+      padding-inline-end: #{$space}rem !important;
+    }
+
+    .py-#{$space} {
+      padding-top: #{$space}rem !important;
+      padding-bottom: #{$space}rem !important;
+    }
+
+    .m-#{$space} {
+      margin: #{$space}rem !important;
+    }
+
+    .mr-#{$space} {
+      margin-right: #{$space}rem !important;
+    }
+
+    .ms-#{$space} {
+      margin-inline-start: #{$space}rem !important;
+    }
+
+    .ml-#{$space} {
+      margin-left: #{$space}rem !important;
+    }
+
+    .me-#{$space} {
+      margin-inline-end: #{$space}rem !important;
+    }
+
+    .mb-#{$space} {
+      margin-bottom: #{$space}rem !important;
+    }
+
+    .mt-#{$space} {
+      margin-top: #{$space}rem !important;
+    }
+
+    .mx-#{$space} {
+      margin-inline-start: #{$space}rem !important;
+      margin-inline-end: #{$space}rem !important;
+    }
+
+    .my-#{$space} {
+      margin-top: #{$space}rem !important;
+      margin-bottom: #{$space}rem !important;
+    }
+  }
+}
