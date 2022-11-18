@@ -74,3 +74,13 @@ $fontSizes: (
 $sizePercents: (100, 75, 50, 33, 25, 0);
 
 $textAlignments: (right, left, center, justify);
+
+$alignments: (
+  center,
+  space-between,
+  space-around,
+  space-evenly,
+  flex-start,
+  flex-end,
+  stretch
+);

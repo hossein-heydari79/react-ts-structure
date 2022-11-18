@@ -203,3 +203,23 @@
     text-align: $align !important;
   }
 }
+
+// justify and align
+
+@each $align in $alignments {
+  .justify-content-#{$align} {
+    justify-content: $align !important;
+  }
+
+  .justify-items-#{$align} {
+    justify-items: $align !important;
+  }
+
+  .align-items-#{$align} {
+    align-items: $align !important;
+  }
+
+  .align-content-#{$align} {
+    align-content: $align !important;
+  }
+}
