@@ -143,3 +143,11 @@
     gap: #{$value}rem !important;
   }
 }
+
+// flex-wrap
+
+@each $key in $flexWrapStates {
+  .flex-#{$key} {
+    flex-wrap: $key !important;
+  }
+}
