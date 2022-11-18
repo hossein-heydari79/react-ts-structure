@@ -167,3 +167,11 @@
     font-weight: $fontWeight !important;
   }
 }
+
+// font-size
+
+@each $key, $value in $fontSizes {
+  .font-size-#{$key} {
+    font-size: #{$value}rem !important;
+  }
+}

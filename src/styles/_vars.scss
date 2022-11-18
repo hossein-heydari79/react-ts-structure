@@ -59,3 +59,14 @@ $flexWrapStates: (wrap, nowrap, wrap-reverse);
 $flexDirectionStates: (row, row-reverse, column, column-reverse);
 
 $fontWeights: (400, 500, 600, 700, 800, 900, bold);
+
+$fontSizes: (
+  0: 0.5,
+  1: 0.625,
+  2: 0.75,
+  3: 0.875,
+  4: 1,
+  5: 1.25,
+  6: 1.5,
+  7: 2,
+);

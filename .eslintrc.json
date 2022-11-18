@@ -5,11 +5,11 @@
     "node": true
   },
   "extends": [
+    "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
     "airbnb",
     "airbnb-typescript",
-    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
   "overrides": [],
@@ -24,10 +24,14 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "no-use-before-define": ["error", { "variables": false }],
+    "no-use-before-define": [
+      "error",
+      {
+        "variables": false
+      }
+    ],
     "react/static-property-placement": "off",
     "react/state-in-constructor": "off",
-    "dot-notation": "off",
     "camelcase": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/ban-ts-comment": "off",
@@ -47,7 +51,9 @@
       }
     ],
     "react/jsx-props-no-spreading": 0,
-    "react/function-component-definition": "off"
+    "react/function-component-definition": "off",
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": "off"
   },
   "settings": {
     "import/resolver": {
