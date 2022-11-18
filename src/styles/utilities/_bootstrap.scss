@@ -127,3 +127,11 @@
     display: $display !important;
   }
 }
+
+// position
+
+@each $position in $positions {
+  .p-#{$position} {
+    position: $position !important;
+  }
+}
