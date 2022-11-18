@@ -195,3 +195,11 @@
     max-height: $size * 1% !important;
   }
 }
+
+// text-align
+
+@each $align in $textAlignments {
+  .text-#{$align} {
+    text-align: $align !important;
+  }
+}

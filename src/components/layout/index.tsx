@@ -1,11 +1,7 @@
-import styles from './layout.module.scss'
+// import styles from './layout.module.scss'
 
 function Layout() {
-  return (
-    <div className='d-flex w-50'>
-      <p className={styles['name']}>hossein</p>
-    </div>
-  )
+  return <div className='w-50 text-center'>hossein</div>
 }
 
 export default Layout
