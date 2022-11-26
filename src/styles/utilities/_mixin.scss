@@ -1,0 +1,34 @@
+@use 'sass:list' as list;
+@import '../_vars.scss';
+
+@mixin media-breakpoint-between($down, $up) {
+  @media (min-width: map-get($breakPoints,$down)) and (max-width: map-get($breakPoints,$up)) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-up($breakpoint) {
+  @media (min-width: map-get($breakPoints , $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+  @media (max-width: map-get($breakPoints , $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-only($breakpoint) {
+  $index: list.index($breakPointsList, $breakpoint);
+
+  @if ($index > 1) {
+    @media (min-width: map-get($breakPoints , list.nth($breakPointsList, $index - 1 ))) and (max-width: map-get($breakPoints , list.nth($breakPointsList,$index))) {
+      @content;
+    }
+  } @else {
+    @media (max-width: map-get($breakPoints , list.nth($breakPointsList,$index))) {
+      @content;
+    }
+  }
+}
