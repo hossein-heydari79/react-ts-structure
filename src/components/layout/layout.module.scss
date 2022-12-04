@@ -1,11 +1,5 @@
-@import '../../styles/utilities/_mixin.scss';
-
-.name {
-  font-size: 2rem;
-}
-
-@include media-breakpoint-only(sm) {
-  .name {
-    color: blue;
+.wrapper {
+  &--title {
+    color: red;
   }
 }

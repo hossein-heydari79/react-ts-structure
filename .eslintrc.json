@@ -60,5 +60,5 @@
       "typescript": {}
     }
   },
-  "ignorePatterns": ["/node_modules/**", "/build/**"]
+  "ignorePatterns": ["/node_modules/**", "/build/**", "/cypress/**"]
 }
