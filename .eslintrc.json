@@ -53,7 +53,14 @@
     "react/jsx-props-no-spreading": 0,
     "react/function-component-definition": "off",
     "dot-notation": "off",
-    "@typescript-eslint/dot-notation": "off"
+    "@typescript-eslint/dot-notation": "off",
+    "import/order": "off",
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
