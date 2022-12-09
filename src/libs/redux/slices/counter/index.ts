@@ -5,6 +5,7 @@ import type { CounterSlice } from './interface'
 
 const initialState: CounterSlice = {
   value: 0,
+  price: 100,
 }
 
 export const counterSlice = createSlice({
@@ -20,9 +21,13 @@ export const counterSlice = createSlice({
     incrementByAmount: (state, action: PayloadAction<number>) => {
       state.value += action.payload
     },
+    increasePrice: (state, action: PayloadAction<number>) => {
+      state.price += action.payload
+    },
   },
 })
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { increment, decrement, incrementByAmount, increasePrice } =
+  counterSlice.actions
 
 export default counterSlice.reducer
