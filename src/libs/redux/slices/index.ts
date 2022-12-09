@@ -2,7 +2,7 @@ import { combineReducers } from '@reduxjs/toolkit'
 import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
-import counterSlice from './counter'
+import counterSlice from './containers/home/counter'
 
 const countPersistConfig = {
   key: 'count',

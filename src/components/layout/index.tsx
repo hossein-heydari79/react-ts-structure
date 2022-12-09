@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import {
   increasePrice,
   incrementByAmount,
-} from '../../libs/redux/slices/counter'
+} from '../../libs/redux/slices/containers/home/counter'
 
 import type { RootState } from '../../libs/redux/store'
 import styles from './layout.module.scss'
