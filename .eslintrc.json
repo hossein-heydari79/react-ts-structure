@@ -60,7 +60,8 @@
       {
         "props": false
       }
-    ]
+    ],
+    "@typescript-eslint/naming-convention": "off"
   },
   "settings": {
     "import/resolver": {

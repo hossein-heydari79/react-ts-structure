@@ -9,6 +9,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist'
+import { homeApi } from './services/home'
 import storage from 'redux-persist/lib/storage'
 import reducers from './slices'
 
@@ -27,7 +28,7 @@ export const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }),
+    }).concat(homeApi.middleware),
 })
 
 export const persistor = persistStore(store)
