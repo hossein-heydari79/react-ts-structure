@@ -1,13 +1,16 @@
-import { useGetUsersQuery } from '../../libs/redux/services/home'
+import { Routes, Route } from 'react-router-dom'
+import { webRoutes } from '../../utils/statics/routes'
 
 import styles from './layout.module.scss'
 
 function Layout() {
-  const { data, isLoading } = useGetUsersQuery(null)
-
   return (
-    <div className={styles['wrapper']}>
-      {!isLoading && <p>{JSON.stringify(data)}</p>}
+    <div className={styles['layout']}>
+      <Routes>
+        {webRoutes.map(({ element, path }) => (
+          <Route path={path} element={element} />
+        ))}
+      </Routes>
     </div>
   )
 }
